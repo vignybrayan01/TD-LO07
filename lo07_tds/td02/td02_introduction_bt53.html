@@ -1,0 +1,339 @@
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LO07 2023 TD02 : bootstrap 5.3</title>
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+        crossorigin="anonymous">
+    
+        <link href="my_css1.css" rel="stylesheet" type="text/css"/>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+       <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>-->
+        
+            
+        <!-- Lien vers le fichier CSS Bootstrap 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> -->
+
+        <!-- Assurez-vous d'inclure jQuery et Popper.js avant le fichier JavaScript Bootstrap  
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script> -->
+
+        <!-- Lien vers le fichier JavaScript Bootstrap -->
+       <!--  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>-->
+
+  </head>
+  <body>
+    <div class="container">
+
+      <h1>Introduction à Bootstrap 5.3</h1>
+      <script 
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+      crossorigin="anonymous"></script>
+
+      <!-- ================================================================================================================ -->
+      <!-- ===== Exercice 2 : Squelette de la page avec modification du navbar -->
+      <!-- ================================================================================================================ -->
+
+      <nav class="navbar navbar-expand-lg bg-primary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">LO07</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.utt.fr/" target="_blank">UTT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=" https://www.utt.fr/formations/diplome-d-ingenieur/informatique-et-systemes-d-information" target="_blank">ISI</a>
+              </li>
+              
+              
+              <!-- ===== SE ===== -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">SE</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://www.umontreal.ca/" target="_blank">Université de Montréal</a></li>
+                  <li><a class="dropdown-item" href="https://www.hec.edu/fr" target="_blank">HEC Paris</a></li>
+                  <li><a class="dropdown-item" href="https://www.uj.ac.za/" target="_blank">University of Johannesburg</a></li>
+                </ul>
+              </li>
+              
+              
+              
+              <!-- ===== Documentation ===== -->
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Documentation</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.3/" target="_blank">Documentation officielle de BT 5.3</a></li>
+
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.3/layout/containers/#default-container" target="_blank">Container</a></li>                  
+                  <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.3/components/card/#about" target="_blank">Card</a></li>                   
+                  <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.3/components/navbar/" target="_blank">Navbar</a></li>
+
+                  <li><hr class="dropdown-divider"></li>    
+                  <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.3/customize/color/" target="_blank">Couleurs</a></li>                                    
+                  <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.3/components/buttons/" target="_blank">Boutons, Button group,badges, </a></li>                                     
+                  <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.3/layout/columns/" target="_blank">Layout columns</a></li>                                    
+                  <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.3/content/tables/" target="_blank">Table</a></li>                                      
+                  <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.3/layout/grid/" target="_blank">Layout grid</a></li>   
+
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Sites de documentation bootstrap 5</a></li>
+                  <li><a class="dropdown-item" href="https://openclassrooms.com/fr/courses/7542506-creez-des-sites-web-responsives-avec-bootstrap-5" target="_blank">openclassrooms</a></li>
+                  <li><a class="dropdown-item" href="https://www.templatemonster.com/fr/bootstrap-5-website-templates/" target="_blank">templatemonster</a></li>
+                  <li><a class="dropdown-item" href="https://www.udemy.com/course/bootstrap-5-creer-et-lancer-des-sites-web-reactifs-debutants/?couponCode=KEEPLEARNING" target="_blank">udemy</a></li>
+                </ul>
+              </li>
+
+              <!-- ===== Exemeple de menu déactivé ===== -->
+
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> 
+
+      <!-- ================================================================================================================ -->
+      <!-- ===== Les jumbotrons de BT3 n'existe plus et sont remplacés par de simple div ===== -->       
+
+      <div class="mt-4 p-5 bg-primary text-white rounded">
+        <h1>Programme ISI de l'UTT</h1>
+        <p>Le programme ISI de l'UTT dispose actuellement de trois filières ATN, IPL et VDC</p>
+      </div>
+
+      <!-- ================================================================================================================ -->
+      <!-- ===== Exercice 3 ===== -->
+      <!-- ================================================================================================================ -->
+
+      <p/><hr/>
+      <div class="card">
+        <div class="card-body bg-info">
+          <h5 class="card-title">Exercice 3</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Présentation des boutons, badges et couleurs</h6>
+          <p class="card-text">La documentation est directement disponible dans le menu Documentation.</p>
+          
+          <div class="alert alert-info" role="alert">
+            
+            <span class="badge text-bg-success">Python</span>
+            <span class="badge text-bg-danger">R</span>
+            <span class="badge text-bg-warning">SQL</span>
+            <span class="badge text-bg-primary">Java</span>
+            <span class="badge text-bg-secondary">C</span> 
+          
+          </div> 
+
+          <hr>  
+          
+            <button type="button" class="btn btn-secondary">
+                ATN <span class="badge text-bg-success">24</span>
+            </button>
+            <button type="button" class="btn btn-secondary position-relative">
+                IPL
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  35
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+             </button>
+            <button type="button" class="btn btn-secondary">
+                VDC <span class="badge text-bg-warning">14</span>
+            </button>
+            
+           <hr>
+          
+           <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <label class="btn btn-outline-primary" for="btnradio1">UTT</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio2">UTC</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio3">UTBM</label>
+            
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio4">UTSEUS</label>
+          </div>
+          
+          <p>TODO</p>
+
+        </div>
+      </div>
+
+      <!-- ================================================================================================================ -->
+      <!-- ===== Exercice 4 ===== -->
+      <!-- ================================================================================================================ -->
+
+      <p/><hr/>
+      <div class="card">
+        <div class="card-body bg-light">
+          <h5 class="card-title">Exercice 4 : Présentation des listes et des tableaux</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Présentation des listes et des tableaux</h6>
+
+          <ul class="list-group">
+            <li class="list-group-item list-group-item-action" >TC</li>
+            <li class="list-group-item list-group-item-action active" aria-current="true">ISI</li>
+            <li class="list-group-item list-group-item-action">RT</li>
+            <li class="list-group-item list-group-item-action">GM</li>
+            <li class="list-group-item list-group-item-action">GI</li>
+          </ul>
+          
+          <hr>
+          
+          <table class="table table-bordered">
+            <thead class="table-warning">
+                <tr >
+                  <th scope="col">#</th>
+                  <th scope="col">ATN</th>
+                  <th scope="col">IPL</th>
+                  <th scope="col">VDC</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr class="table-primary">
+                <th scope="row">CS</th>
+                    <td>  
+                         <ul class="list-group">
+                            <li class="list-group-item">IF06A</li>
+                            <li class="list-group-item">IF09</li>
+                   <!--         <li class="list-group-item">IF19</li>
+                            <li class="list-group-item">IF22</li>
+                            <li class="list-group-item">IF36</li>   -->
+                         </ul>
+                    </td>
+                    <td> 
+                         <ul class="list-group">
+                            <li class="list-group-item">IF05</li>
+                            <li class="list-group-item">IF06A</li>
+                     <!--       <li class="list-group-item">IF09</li>
+                            <li class="list-group-item">IF10</li>  -->                          
+                         </ul>
+                    </td>
+                    <td> 
+                         <ul class="list-group">
+                            <li class="list-group-item">IF10</li>
+                            <li class="list-group-item">IF17</li>
+                        <!--    <li class="list-group-item">IF29</li>
+                            <li class="list-group-item">IF36</li>   -->                         
+                         </ul>
+                    </td>
+              </tr>
+              <tr class="table-success">
+                <th scope="row">TM</th>
+                    <td> 
+                         <ul class="list-group">
+                            <li class="list-group-item">IF20</li>
+                            <li class="list-group-item">IF34</li>
+                         <!--<li class="list-group-item">ISI_C01</li>
+                            <li class="list-group-item">ISI_C02</li>
+                            <li class="list-group-item">ISI_C03</li> -->
+                         </ul>
+                    </td>
+                    <td> 
+                         <ul class="list-group">
+                            <li class="list-group-item">IF26</li>
+                            <li class="list-group-item">IF31</li>
+                            <li class="list-group-item">LO10</li>
+                        <!--    <li class="list-group-item">ISI_C01</li>
+                            <li class="list-group-item">ISI_C02</li>  -->
+                         </ul>
+                    </td>
+                    <td> 
+                         <ul class="list-group">
+                            <li class="list-group-item">IF28</li>
+                            <li class="list-group-item">IF34</li>
+                      <!--      <li class="list-group-item">ISI_C01</li>
+                            <li class="list-group-item">ISI_C02</li>
+                            <li class="list-group-item">ISI_C03</li>  -->
+                         </ul>
+                    </td>
+              </tr>
+            </tbody>
+          </table>
+          
+          
+          <p>TODO</p>
+
+        </div>
+      </div>
+
+
+      <!-- ================================================================================================================ -->
+      <!-- ===== Exercice 5 : Grid ===== -->
+      <!-- ================================================================================================================ -->      
+
+      <p/><hr/><p/>
+      <div class="card">
+        <div class="card-body bg-success-subtle">
+          <h5 class="card-title">Exercice 5</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Introduction aux GRIDs</h6>
+          
+          <div class="container text-center border border-primary" >
+            <div class="row row-cols-6">
+              <div class="col border border-primary">Extra smal(xs)</div>
+              <div class="col border border-primary">Smal(sm)</div>
+              <div class="col border border-primary">Medium (md)</div>
+              <div class="col border border-primary">Large (lg)</div>
+              <div class="col border border-primary">Extra large (xl)</div>
+              <div class="col border border-primary">Extra extra large (xxl)</div>
+            </div>
+          </div>
+          
+          <hr>
+          
+          
+                <div class="container text-center border border-3 rounded p-2 border-warning mb-3 col-sm-9 col-15 " >
+                    
+                    <div class="row">
+                      <div class="col col-12 border border-3 rounded p-2 border-danger mb-3 ">TC</div>                
+                    </div>
+                    
+                    
+                    <div class="row row-cols-4 mb-3">
+                      <div class="col border border-success bg-success text-black">ISI</div>
+                      <div class="col border border-danger bg-danger text-black">RT</div>
+                      <div class="col border border-warning bg-warning text-black">GI</div>
+                      <div class="col border border-primary bg-primary text-black">GM</div>              
+                    </div>
+
+                    
+                    <div class="row row-cols-12 border border-3 rounded p-2 border-success mb-3">
+                    <div class="col ">ATN</div>
+                    <div class="col ">IPL</div>
+                    <div class="col ">VDC</div>
+                    <div class="col ">CSR</div>
+                    <div class="col ">SSC</div>
+                    <div class="col ">TMOC</div>
+                    <div class="col ">LET</div>
+                    <div class="col ">LIP</div>
+                    <div class="col ">RAMS</div>
+                    <div class="col ">EME</div>
+                    <div class="col ">TCMC</div>
+                    <div class="col ">TQM</div>
+                  </div>      
+                </div>
+         
+          
+
+        </div>
+      </div>
+    </div>
+
+  <p/><hr/><p/>
+  <small>Page de Takam Talla Vigny rédigée 25/02/2024</small>
+  <p/><hr/><p/>    
+
+</body>
+</html>
